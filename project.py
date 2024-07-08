@@ -5,7 +5,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error,r2_score
 import pickle
 
-model = pickle.load(open(r"C:\Users\G0d\Machine Learning\lr.pkl","rb"))
+model = pickle.load(open("lr.pkl","rb"))
 st.title("House Price Prediction")
 
 SquareFeet =st.number_input("Enter the size of the house",min_value=1000,max_value=2999,step=50)
